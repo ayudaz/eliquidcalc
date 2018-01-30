@@ -46,6 +46,11 @@ public class CacheConfiguration {
             cm.createCache(com.ayudaz.eliquidcalc.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.ayudaz.eliquidcalc.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.ayudaz.eliquidcalc.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ayudaz.eliquidcalc.domain.Liquid.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ayudaz.eliquidcalc.domain.Liquid.class.getName() + ".dosages", jcacheConfiguration);
+            cm.createCache(com.ayudaz.eliquidcalc.domain.Brand.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ayudaz.eliquidcalc.domain.Brand.class.getName() + ".liquids", jcacheConfiguration);
+            cm.createCache(com.ayudaz.eliquidcalc.domain.Dosage.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
